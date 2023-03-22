@@ -1,0 +1,66 @@
+new
+145470@moodle.quincy.edu
+Assignment 1
+02/04/2023
+CSC360
+2
+new
+146268@moodle.quincy.edu
+Assignment 1
+02/06/2023
+CSC362
+3
+new
+147498@moodle.quincy.edu
+Assignment 1
+02/06/2023
+CYB201
+4
+new
+147804@moodle.quincy.edu
+Assignment 1 - Part 1
+02/08/2023
+CSC450
+5
+new
+147874@moodle.quincy.edu
+Assignment 1
+02/09/2023
+CYB340
+1
+new
+146276@moodle.quincy.edu
+Project 1 - Sorting
+02/15/2023
+CSC310
+1
+new
+148499@moodle.quincy.edu
+Class Exercise 2
+02/15/2023
+CYB340
+1
+new
+146269@moodle.quincy.edu
+Assignment 2
+02/16/2023
+CSC362
+1
+new
+147981@moodle.quincy.edu
+Assignment 2 - Part 1
+02/16/2023
+CSC360
+1
+new
+148279@moodle.quincy.edu
+February Meeting --2/16/23
+02/16/2023
+CSC360
+1
+new
+148360@moodle.quincy.edu
+Assignment 2
+02/22/2023
+CSC450
+1

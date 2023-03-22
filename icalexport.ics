@@ -1,0 +1,147 @@
+BEGIN:VCALENDAR
+METHOD:PUBLISH
+PRODID:-//Moodle Pty Ltd//NONSGML Moodle Version 2020061518.05//EN
+VERSION:2.0
+BEGIN:VEVENT
+UID:145470@moodle.quincy.edu
+SUMMARY:Assignment 1 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230203T183546Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230204T055900Z
+DTEND:20230204T055900Z
+CATEGORIES:CSC--360-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:146268@moodle.quincy.edu
+SUMMARY:Assignment 1 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230130T013345Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230206T055900Z
+DTEND:20230206T055900Z
+CATEGORIES:CSC--362-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:147498@moodle.quincy.edu
+SUMMARY:Assignment 1 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230210T190646Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230206T150000Z
+DTEND:20230206T150000Z
+CATEGORIES:CYB--201-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:147804@moodle.quincy.edu
+SUMMARY:Assignment 1 - Part 1
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230131T165015Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230208T055900Z
+DTEND:20230208T055900Z
+CATEGORIES:CSC--450-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:147874@moodle.quincy.edu
+SUMMARY:Assignment 1 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230210T160704Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230209T153000Z
+DTEND:20230209T153000Z
+CATEGORIES:CYB--340-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:146276@moodle.quincy.edu
+SUMMARY:Project 1 - Sorting is due
+DESCRIPTION:Your work should be submitted as an archive (.zip\, .7z\, .rar)
+	 on Moodle. This archive must contain all your source code files\, as well 
+	as your data analysis document. The document can be in any reasonable file 
+	format (PDF\, .doc\, .docx\, .odt). Please do not submit your entire projec
+	t folder.\n
+	
+CLASS:PUBLIC
+LAST-MODIFIED:20230122T194427Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230215T055500Z
+DTEND:20230215T055500Z
+CATEGORIES:CSC--310-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:148499@moodle.quincy.edu
+SUMMARY:Class Exercise 2 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230214T144250Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230215T060000Z
+DTEND:20230215T060000Z
+CATEGORIES:CYB--340-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:146269@moodle.quincy.edu
+SUMMARY:Assignment 2 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230130T013404Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230216T055900Z
+DTEND:20230216T055900Z
+CATEGORIES:CSC--362-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:147981@moodle.quincy.edu
+SUMMARY:Assignment 2 - Part 1
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230203T183251Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230216T055900Z
+DTEND:20230216T055900Z
+CATEGORIES:CSC--360-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:148279@moodle.quincy.edu
+SUMMARY:February Meeting --2/16/23 is due
+DESCRIPTION:In this presentation\, you will prepare a 20-minute formal pres
+	entation of your project. The presentation should cover the following point
+	s:\n\n	*\nIntroduction and Motivation: Describe the value and benefits of t
+	he project\, identify its origin\, and distinguish it from existing product
+	s and software.\n\n	*\nObjectives: Describe the main functionalities and go
+	als of your project and how you (the group) will meet them. In this present
+	ation\, your creativity is unrestricted.\n\n	*\nAnticipated Technical Chall
+	enges (in detail).\n\n	*\nSketches or drawings of the potential layout of y
+	our software.\n\n	*\nConclusion and Questions!\n\nStudents should prepare p
+	erfect presentation materials and test the presentation and demonstrations 
+	well before the scheduled presentation in the assigned classroom. Your pres
+	entation should:\n\na. Have ten or more slides.\nb. Use a specific PowerPoi
+	nt theme.\nc. Have a title page that includes a subtitle with your name(s).
+	\nd. Have some text in the speaker notes area on at least five slides.\ne. 
+	Have a multi-level bulleted list.\nf. Contain pictures.\n\nUpload your pres
+	entation to the presentation Dropbox before the due date.\n\n
+	
+CLASS:PUBLIC
+LAST-MODIFIED:20230209T194307Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230216T200000Z
+DTEND:20230216T200000Z
+CATEGORIES:CSC--360-001\, 2022-SP 
+END:VEVENT
+BEGIN:VEVENT
+UID:148360@moodle.quincy.edu
+SUMMARY:Assignment 2 is due
+DESCRIPTION:
+CLASS:PUBLIC
+LAST-MODIFIED:20230210T161045Z
+DTSTAMP:20230216T002247Z
+DTSTART:20230222T055900Z
+DTEND:20230222T055900Z
+CATEGORIES:CSC--450-001\, 2022-SP 
+END:VEVENT
+END:VCALENDAR
