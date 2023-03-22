@@ -7,11 +7,11 @@ You have to put the ICS file into the folder with the Java files. The data file 
 
 ![2023-03-21_21-26](https://user-images.githubusercontent.com/120692984/226786005-b026204d-fec2-415d-827c-d6e163b080f9.png)
 
-After running the program, if no data is detected, it will start parsing through the ICS file to create the data file. Here it will find every assignment then ask the user to input how many points that assignment is worth.
+After running the program, if no data is detected, it will start parsing through the ICS file to create the data file. Here it will find every assignment then ask the user to input how many points that assignment is worth. Now, whenever the program is launched, it will read from the data file and not the ICS file. 
 
 ![2023-03-21_21-29](https://user-images.githubusercontent.com/120692984/226786411-ee00d938-6db7-4fed-b6e5-7631b7ab361b.png)
 
-After that, it will read the data from the data file and turn them into Java objects. The class objects are shown and the user can select a class to look through by typing in the corresponding number.
+After that, it will read the data from the data file and turn them into Java objects. The class objects are shown and the user can select a class to look through by typing in the corresponding number. 
 
 ![2023-03-21_21-31](https://user-images.githubusercontent.com/120692984/226786707-f642eff3-a932-46b0-9f19-2f7407afe37e.png)
 
@@ -23,7 +23,10 @@ Here you can see the name, due date, days left (In the negative since it was due
 
 ![2023-03-21_21-33](https://user-images.githubusercontent.com/120692984/226786942-ad82d077-551d-4bfb-b959-e7d2c9c9eb69.png)
 
-From here you can go back to look at the other classes and assignments. 
+From here you can go back to look at the other classes and assignments.
+
+## How to update data
+For now, in order to update the data you have to delete the data file and replace the existing ICS file. 
 
 ## What's left
 This part converts all the data into objects with some basic functions. From here, we just need to add the rest of the required functions, such 
