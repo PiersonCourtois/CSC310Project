@@ -3,7 +3,7 @@ This is a demonstration of the project. Mainly all this does right now is take i
 then convert that data file into Java objects that can be used. Converting the data to a data file allows the program to read from the data file instead of the ICS file everytime. This is useful since the program won't have to parse the data every time its ran and it can save user inputted data, like points or importance for an assignment. I implemented very rough command line options that can be used to search
 through the classes and assignments to find out their relevant information. 
 ## In order to use this...
-You have to put the ICS file into the folder with the Java files. The data file will automatically be created if one is not already found. 
+You have to put the ICS file into the folder with the Java files. The data file will automatically be created if one is not already found. Later, it would be good to implement a file search popup so that the user can select the ICS file. 
 
 ![2023-03-21_21-26](https://user-images.githubusercontent.com/120692984/226786005-b026204d-fec2-415d-827c-d6e163b080f9.png)
 
