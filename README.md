@@ -1,5 +1,5 @@
 # Update 1
-- **ICS file now gets automatically downloaded when provided a link**
+- **ICS file now gets automatically downloaded**
   - For now, you can manually input your calendar link in the CreateData class within the downloadCurrentCalendar function parameter
   - To get the calendar link on Moodle, go to Calendar > Export Calendar > Get Calendar URL![2023-03-29_21-12](https://user-images.githubusercontent.com/120692984/228710269-24d96e25-1db1-418a-9da4-9723319356e7.png)
   - The calendar will automatically update every time the program is ran, as well as the data file (With no duplicates)
