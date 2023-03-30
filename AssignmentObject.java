@@ -6,9 +6,11 @@ import java.util.Date;
 public class AssignmentObject {
   ////////////////////////////////////////////////////////////////////
   // This class is for the assignments. Each assignment has a name, //
-  // course, ID, due date, points, and days left data associated    //
-  // it. Only thing left to do here is calculate the importance and //
-  // have the course importance influence the points of it.         //
+  // course, ID, due date, points, days left, weighted points (that //
+  // is, the points after considering things such as due date,      //
+  // importance, etc...). Only thing left to do here is calculate   //
+  //the importance and have the course importance influence the     //
+  // points of it.                                                  //
   ////////////////////////////////////////////////////////////////////
   private String name;
   private String course;
@@ -16,7 +18,8 @@ public class AssignmentObject {
   private String dueDate;
   private int points;
   private int daysLeft;
-
+  private int weightedPoints;
+  private boolean isImportant;
 
   public void calculateImportance() {
     // TODO: calculate the importance based on how many days are left and how many points the assignment is worth
@@ -39,6 +42,21 @@ public class AssignmentObject {
   }
 
   // Setters
+  public void setImportance(boolean iImportance) {
+    // TODO: when this is set to true, double points. 
+    // Also, important to make this cannot be called with the 
+    // same importance twice (ie: If you make it so that when 
+    // iImportance is true double the points, setting the importance
+    // to two twice in a row will effectively quadruple its points.
+    // Maybe make a new function that inverts the importance and
+    // adjusts the points, THEN use this setImportance function.)
+    this.isImportant = iImportance;
+  }
+
+  public void setWeightedPoints(int iWeightedPoints) {
+    this.weightedPoints = iWeightedPoints;
+  }
+
   public void setPoints(int iPoints) {
     this.points = iPoints;
   }
@@ -65,6 +83,14 @@ public class AssignmentObject {
   }
 
   // Getters
+  public boolean getImportance() {
+    return this.isImportant;
+  }
+
+  public int getWeightedPoints() {
+    return this.weightedPoints;
+  }
+
   public int getPoints() {
     return this.points;
   }
