@@ -1,4 +1,26 @@
-# CSC 360 Project 
+# Update 1
+- **ICS file now gets automatically downloaded when provided a link**
+  - For now, you can manually input your calendar link in the CreateData class within the downloadCurrentCalendar function parameter
+  - To get the calendar link on Moodle, go to Calendar > Export Calendar > Get Calendar URL![2023-03-29_21-12](https://user-images.githubusercontent.com/120692984/228710269-24d96e25-1db1-418a-9da4-9723319356e7.png)
+  - The calendar will automatically update every time the program is ran, as well as the data file (With no duplicates)
+  - When a new assignment is detected from the new calendar, the program prompts the user for data on that assignment just like it would when first importing
+- **Added a function that updates the data file before exiting**
+  - This is so that if the user changes an attribute for an assignment (ex: making an assignment important, chaning due date, etc...), that change will stay updated in the data file. 
+- **Class object removed**
+  - There was no reason to have a class object, it just made things more difficult. I condensed everything into the AssignmentObject ArrayList. This should hopefully make sorting the assignments easier. 
+
+## What's left
+As far as the backend goes:
+- Implement a function that sorts the assignments in ascending order of points
+- Implement a function to the AssignmentObject class that calulates the weighted points by taking into consideration due date, importance, etc.
+- Implement a function to make an assignment important and update its points value accordingly
+- Implement a function to split assignments (I don't know how I'm going to implement this)
+
+
+
+
+
+# CSC 360 Project
 This is a demonstration of the project. Mainly all this does right now is take in data from the ICS file, parse that data, convert that to a data file (data.txt),
 then convert that data file into Java objects that can be used. Converting the data to a data file allows the program to read from the data file instead of the ICS file everytime. This is useful since the program won't have to parse the data every time its ran and it can save user inputted data, like points or importance for an assignment. I implemented very rough command line options that can be used to search
 through the classes and assignments to find out their relevant information. 
