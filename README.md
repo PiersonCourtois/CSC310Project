@@ -10,6 +10,9 @@
 - **Class object removed**
   - There was no reason to have a class object, it just made things more difficult. I condensed everything into the AssignmentObject ArrayList. This should hopefully make sorting the assignments easier. 
 
+**Note**
+In order to use your own data, you'll have to delete the data.txt and calendar file; my data is currently in there.
+
 ## What's left
 As far as the backend goes:
 - Implement a function that sorts the assignments in ascending order of points
