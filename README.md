@@ -5,16 +5,21 @@
   - The calendar will automatically update every time the program is ran, as well as the data file (With no duplicates)
   - When a new assignment is detected from the new calendar, the program prompts the user for data on that assignment just like it would when first importing
 - **Added a function that updates the data file before exiting**
-  - This is so that if the user changes an attribute for an assignment (ex: making an assignment important, chaning due date, etc...), that change will stay updated in the data file. 
+  - No need to delete the data.txt file to update anymore
+  - This also helps if the user changes an attribute for an assignment (ex: making an assignment important, chaning due date, etc...), that change will stay updated in the data file. 
 - **Class object removed**
   - There was no reason to have a class object, it just made things more difficult. I condensed everything into the AssignmentObject ArrayList. This should hopefully make sorting the assignments easier. 
 
 ## What's left
 As far as the backend goes:
 - Implement a function that sorts the assignments in ascending order of points
+  - Should be simple
 - Implement a function to the AssignmentObject class that calulates the weighted points by taking into consideration due date, importance, etc.
+  - I haven't done this yet because I don't know the exact calculation we were planning on using for this
 - Implement a function to make an assignment important and update its points value accordingly
-- Implement a function to split assignments (I don't know how I'm going to implement this)
+  - This should be simple as well
+- Implement a function to split assignments
+  - Don't know how I'm going to implement this, will probably be a bit complicated
 
 
 
