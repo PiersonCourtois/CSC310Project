@@ -152,7 +152,7 @@ public class CreateData {
           while(oldInput.hasNextLine()) { // Check the old data file to see if it exists
             newAssign = true;
             String check = oldInput.nextLine();
-            if(test.contains(check)) { // If the current line of new calendar contains the same UID as a current assignment
+            if(test.contains(check) && check.length() > 5) { // If the current line of new calendar contains the same UID as a current assignment
               newAssign = false;
               break;
             }
