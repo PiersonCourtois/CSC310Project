@@ -1,3 +1,5 @@
+package application;
+
 import java.util.Scanner;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -13,9 +15,9 @@ public class CreateData {
   // Java objects. Just trust that this works please, its ugly.     //
   ////////////////////////////////////////////////////////////////////
 
-  public void makeFile(Scanner input) {
+  public void makeFile(Scanner input, String link) {
     try {
-      downloadCurrentCalendar("https://moodle.quincy.edu/calendar/export_execute.php?userid=8995&authtoken=727c3a4982abd842425c0b9382a90969cf5a60e0&preset_what=all&preset_time=recentupcoming");
+      downloadCurrentCalendar(link);
     } catch (IOException e) {
       System.out.println("Error getting new calendar");
       e.printStackTrace();
@@ -41,7 +43,7 @@ public class CreateData {
     // This method parses and stores the data from the calendar file to a data file (data.txt)
     System.out.println("Creating data...");
     try {
-      File file = new File("./icalexport.ics"); // Open calendar file
+      File file = new File("icalexport.ics"); // Open calendar file
       Scanner input = new Scanner(file);
       while(input.hasNextLine()) {
         String test = input.nextLine(); // Get first line
@@ -142,12 +144,12 @@ public class CreateData {
     // is checked to see if it contains new data. If it does, it is added to the data file. 
     try {
       boolean newAssign = false;
-      File file = new File("./icalexport.ics");
+      File file = new File("icalexport.ics");
       Scanner input = new Scanner(file);
       while(input.hasNextLine()) {
         String test = input.nextLine(); // Get first line
         if(test.contains("UID")) {  // If current line contains the UID of an assignment
-          File oldData = new File("./data.txt");
+          File oldData = new File("data.txt");
           Scanner oldInput = new Scanner(oldData);
           while(oldInput.hasNextLine()) { // Check the old data file to see if it exists
             newAssign = true;

@@ -1,3 +1,5 @@
+package application;
+
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
@@ -10,10 +12,10 @@ public class MainTest {
   ////////////////////////////////////////////////////////////////////
   public static void main(String[] args) {
     ArrayList<AssignmentObject> assignList = new ArrayList<AssignmentObject>();
-    CreateData data = new CreateData(); 
+    //CreateData data = new CreateData(); 
     Scanner input = new Scanner(System.in);
 
-    data.makeFile(input); // Create data file
+    //data.makeFile(input, null); // Create data file
     MainTest mainTest = new MainTest(); // I have to do this because the program won't work otherwise. Too bad!
     assignList = mainTest.initData(); // Make data into AssignmentObjects and add to this list
 
@@ -23,7 +25,7 @@ public class MainTest {
 
     
     input.close();
-    data.updateData(assignList);
+    //data.updateData(assignList);
     return;
   }
 
@@ -37,11 +39,11 @@ public class MainTest {
     assign.setDueDate(assignData[2]);
     assign.setCourse(assignData[3]);
     assign.setPoints(Integer.parseInt(assignData[4]));
-    assign.setWeightedPoints(Integer.parseInt(assignData[5]));
     if(assignData[6].equals("true"))
       assign.setImportance(true);
     else
       assign.setImportance(false);
+    assign.setWeightedPoints(0);
     return assign;
   }
 
@@ -80,22 +82,17 @@ public class MainTest {
   }
 
 
-  public void printSortedByPoints(ArrayList<AssignmentObject> assignList) {
-    // This method prints the sorted assignment list by points
-    for(int i = 0; i < assignList.size(); i++) {
-      
-    }
-  }
-
-  public void printSortedByWeights(ArrayList<AssignmentObject> assignList) {
+  public void sortAssignments(ArrayList<AssignmentObject> assignList) {
     // This method prints the sorted assignment list by weighted points
-    for(int i = 0; i < assignList.size(); i++) {
-      
+    for(int i = 0; i < assignList.size(); i++) { // dumb bubble sort
+    	for(int j = 1; j < assignList.size(); j++) {
+    		if((assignList.get(i).getWeightedPoints()) < (assignList.get(j).getWeightedPoints())) { // if j greater than i
+    			AssignmentObject tempor = assignList.get(j); // store j in temp
+    			assignList.set(j, (assignList.get(i))); // replace j with i
+    			assignList.set(i, tempor); // replace i with temp
+    			
+    		}
+    	}
     }
-  }
-
-  public void deleteAssignment(AssignmentObject e) {
-    // This method deletes an assignment from the list. Honestly unsure if this is needed or not.
-    // I hope not.
   }
 }

@@ -1,3 +1,5 @@
+package application;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.concurrent.TimeUnit;
@@ -43,18 +45,23 @@ public class AssignmentObject {
 
   // Setters
   public void setImportance(boolean iImportance) {
-    // TODO: when this is set to true, double points. 
-    // Also, important to make this cannot be called with the 
-    // same importance twice (ie: If you make it so that when 
-    // iImportance is true double the points, setting the importance
-    // to two twice in a row will effectively quadruple its points.
-    // Maybe make a new function that inverts the importance and
-    // adjusts the points, THEN use this setImportance function.)
     this.isImportant = iImportance;
   }
 
-  public void setWeightedPoints(int iWeightedPoints) {
-    this.weightedPoints = iWeightedPoints;
+  public void setWeightedPoints(int blah) {
+	int temp;
+	if(this.daysLeft == 0) // if no days left...
+		temp = this.points; // avoid divide by 0
+	else
+		temp = this.points / this.daysLeft;
+	
+	if(temp == 0 || temp < 0) // if days are so large it becomes 0 or if negative days...
+		temp = this.points; // dont weigh
+	
+	if(this.isImportant)
+		temp = temp * 2;
+		
+    this.weightedPoints = temp;
   }
 
   public void setPoints(int iPoints) {
